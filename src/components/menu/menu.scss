@@ -1,0 +1,28 @@
+@import "../../global.scss";
+.mainMenu {
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  z-index: 1;
+  background-color: $mainColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  transition: all 1s ease;
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 200;
+    &:hover {
+      font-weight: 500;
+    }
+  }
+  &.active {
+    right: 0;
+  }
+}
